@@ -20,4 +20,4 @@ npm install react-skeleton-css
 
 ## Usage
 
-After you've included react-skeleton-css and the skeleton css/stylesheets, you can use the components.
+After you've included react-skeleton-css and the skeleton css/stylesheets, you can use the components. Caveat: you must include the skeleton css/stylesheets in your project.
