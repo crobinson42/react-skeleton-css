@@ -1,17 +1,17 @@
 {
-  "name": "react-skeleton",
+  "name": "react-skeleton-css",
   "version": "2.0.0",
   "description": "Skeleton CSS Framework built in React",
   "main": "dist/main.bundle.js",
   "repository": {
     "type": "git",
-    "url": "lightsinthesky/react-skeleton"
+    "url": "crobinson42/react-skeleton-css"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --hot --watch"
   },
-  "homepage": "http://react-skeleton.github.io",
+  "homepage": "http://react-skeleton-css.github.io",
   "keywords": [
     "react",
     "skeleton",

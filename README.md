@@ -8,7 +8,7 @@ react-skeleton-css is a React UI framework built with the [Skeleton](http://gets
 react-skeleton-css is available as an [npm package](https://www.npmjs.com/package/react-skeleton-css)
 
 ```sh
-npm install react-skeleton
+npm install react-skeleton-css
 ```
 
 ## Usage
