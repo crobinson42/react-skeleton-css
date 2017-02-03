@@ -14,7 +14,7 @@ module.exports = {
     filename: "[name].bundle.js"
   },
 
-  watch: true,
+  watch: process.env.NODE_ENV === 'production' ? false : true,
   watchOptions: {
     ignored: /node_modules/
   },
