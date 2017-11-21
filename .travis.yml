@@ -10,6 +10,7 @@ node_js:
   - '4'
 before_script:
   - npm prune
+  - npm run test
 after_success:
   - npm run build
   - npm run semantic-release
