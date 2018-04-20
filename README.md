@@ -4,7 +4,6 @@ Skeleton "micro" css framework boilerplate: http://www.getskeleton.com. Consolid
 [![Build Status](https://travis-ci.org/crobinson42/react-skeleton-css.svg?branch=master)](https://travis-ci.org/crobinson42/react-skeleton-css)
 [![npm version](https://badge.fury.io/js/react-skeleton-css.svg)](https://badge.fury.io/js/react-skeleton-css)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-[![react](https://cloud.githubusercontent.com/assets/5973579/22582957/e5f05040-e99e-11e6-9e07-607a5de86899.png)](https://react.facebook.com)
 
 ------
 
@@ -30,4 +29,10 @@ npm install react-skeleton-css
 
 ## Usage
 
-After you've included react-skeleton-css and the skeleton css/stylesheets, you can use the components. Caveat: you must include the skeleton css/stylesheets in your project.
+> You must include the skeleton css/stylesheets in your project.
+
+```
+<link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" type="text/css" rel="stylesheet">
+```
+
+After you've included react-skeleton-css and the skeleton css/stylesheets, you can use the components.

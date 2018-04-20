@@ -5,12 +5,11 @@ cache:
 notifications:
   email: false
 node_js:
-  - '7'
+  - '9'
+  - '8'
   - '6'
-  - '4'
 before_script:
   - npm prune
-  - npm run test
 after_success:
   - npm run build
   - npm run semantic-release
