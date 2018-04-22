@@ -11,7 +11,8 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].bundle.js"
+    filename: "[name].bundle.js",
+    libraryTarget: 'commonjs2'
   },
 
   watch: process.env.NODE_ENV === 'production' ? false : true,
