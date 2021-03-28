@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+$colorLight: #fafafa;
+$colorDark: #252529;
+$colorLightGrey: #eeeeee;
+$colorGrey: #bdbdbd;
+
+$colorWhite: #fff;
+
+$colorDarkGreen: #2e7d32;
+$colorGreen: #4caf50;
+$colorLightGreen: #4dd0e1;
+
+$color1: #9575cd;
+$color2: #7986cb;
+$color2: #f48fb1;
+$color3: #9575cd;
+$color4: #4FC3F7;
+
+$colorWarning: #FFA000;
+$colorOff: #BF360C;
+
+$layoutWidth: 980px;
+$standardPadding: 20px;
+$layoutBorderRadius: 5px;
+
+$sizeDefault: 1em;
+$sizeLarge: 1.25em;
+$sizeXLarge: 1.5em;
+$sizeXXLarge: 2em;
+
+$col1Width: 240px;
+$col2Width: 145px;
+$col3Width: 190px;
+$col4Width: 150px;
+$col5Width: 170px;
+$col6Width: 30px;
+
+
+body {
+	font-family: "Open Sans", sans-serif;
+	background: $colorLightGrey;
+}
+
+.container {
+	margin: 0 auto;
+	margin-top: 50px;
+	width: $layoutWidth;
+}
+
+header {
+	display: flex;
+	align-items: center;	
+	font-size: $sizeDefault;
+	font-weight: 600;
+	color: $colorGrey;
+	padding: $standardPadding;
+	box-sizing: border-box;
+	user-select: none;
+	text-align: center;
+	
+	.button-col {
+		width: $col1Width;
+		text-align: left;
+	}
+
+	.status-col {
+		width: $col2Width
+	}
+
+	.progress-col {
+		width: $col3Width
+	}
+
+	.dates-col {
+		width: $col4Width
+	}
+
+	.priority-col {
+		width: $col5Width
+	}
+	
+	.icon-col {
+		width: $col6Width;
+		text-align: right;
+	}
+
+	button {
+		color: $colorGrey;
+		outline: none;
+		border: none;
+		background: darken($colorLightGrey, 10%);
+		padding: $standardPadding/2 $standardPadding;
+		border-radius: $layoutBorderRadius/2;
+		margin-right: $standardPadding;
+		font-size: $sizeDefault;
+		font-weight: 600;
+
+		&:hover {
+			cursor: pointer;
+			background: lighten($colorDark, 10%);
+		}
+	}
+
+	label {
+		display: inline-block;
+		margin: 0 $standardPadding;
+		text-align: center;
+	}
+
+	.icon-col {
+		padding-right: 20px;
+	}
+}
+
+ul.task-items {
+	li.item {
+		display: flex;
+		align-items: center;		
+		margin: $standardPadding 0;
+		padding: $standardPadding;
+		background: $colorWhite;
+		border-radius: $layoutBorderRadius;
+		box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+
+		&.type1 .task {
+			.icon {
+				background: $color1;
+			}
+		}
+		
+		&.type2 .task {
+			.icon {
+				background: $color2;
+			}
+		}
+		
+		&.type3 .task {
+			.icon {
+				background: $color3;
+			}
+		}
+		
+		&.type4 .task {
+			.icon {
+				background: $color4;
+			}
+		}
+
+		.task {
+			display: flex;
+			align-items: center;
+			width: $col1Width;
+
+			.icon {
+				background: $colorGrey;
+				width: 50px;
+				height: 50px;
+				border-radius: $layoutBorderRadius;
+			}
+
+			.name {
+				background: $colorLightGrey;
+				margin-left: $standardPadding;
+				width: 180px;
+				height: 25px;
+				border-radius: $layoutBorderRadius * 3;
+			}
+		}
+
+		.status {
+			display: flex;
+			align-items: center;
+			font-size: $sizeDefault;
+			color: $colorDarkGreen;
+			width: $col2Width;
+			margin-left: $standardPadding*1.5;
+			
+			.icon {
+				background: $colorDarkGreen;
+				margin-right: $standardPadding/2;
+				width: 14px;
+				height: 14px;
+				border-radius: 50%;
+				
+				&.risk {
+					background: red;	
+				}
+				
+				&.warning {
+					background: $colorWarning;	
+				}
+				
+				&.off {
+					background: $colorOff;	
+				}
+			}
+		}
+
+		.progress {
+			width: $col3Width;
+			progress {
+				display: block;
+				margin-left: 0;
+				-webkit-appearance: none;
+				height: 12.5px;
+				width: $col3Width * 0.75;
+			}
+
+			progress::-webkit-progress-bar {
+				background-color: $colorLightGrey;
+				border-radius: 5px;
+			}
+
+			::-webkit-progress-value {
+				background-color: $colorLightGreen;
+				border-radius: 5px;
+			}
+		}
+
+		.dates {
+			width: $col4Width;
+		}
+
+		.dates,
+		.priority {
+			.bar {
+				background: $colorLightGrey;				
+				width: 100px;
+				height: 25px;
+				border-radius: $layoutBorderRadius * 3;
+			}
+		}
+
+		.priority {
+			width: $col5Width*0.85;
+			.bar {
+				background: #ffcdd2;
+			}
+		}
+
+		.user {
+			width: $col6Width;
+			img {
+				border-radius: 50%;
+			}
+		}
+	}
+}
